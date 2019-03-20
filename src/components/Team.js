@@ -1,20 +1,16 @@
 import React from "react";
 
-const Team = () => {
+const Team = ({ name, founded, ground, crestUrl }) => {
   return (
     <div
-      className="card shadow m-auto p-3 mb-5 bg-white rounded"
+      className="card p-4 shadow m-auto bg-white rounded"
       style={{ width: "16rem", textAlign: "center" }}
     >
-      <img
-        alt="team"
-        src="https://kassiesa.net/uefa/clubs/images/Leeds-United.png"
-        class="card-img-top"
-      />
+      <img alt="team" src={`${crestUrl}`} class="card-img-top" />
       <div className="card-body">
-        <h3 className="card-title">Leeds United</h3>
-        <p className="card-text">Founded: 1900</p>
-        <p className="card-text">Ground: Elland Road</p>
+        <h3 className="card-title">{name}</h3>
+        <p className="card-text">Founded: {founded}</p>
+        <p className="card-text">Ground: {ground}</p>
       </div>
     </div>
   );

@@ -1,26 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Team from "./components/Team";
+import TeamList from "./components/TeamList";
+import { teams } from "./teams";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      teams: []
-    };
-  }
-
-  // componentDidMount() {
-  //   const url = "http://api.football-data.org/v2/teams/";
-  //   const apiKey = "491659630092491e821fa9ea920342da";
-  // }
-
   render() {
     return (
       <div className="App">
         <NavBar />
-        <Team />
+        <TeamList teams={teams} />
       </div>
     );
   }
