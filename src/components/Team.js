@@ -6,7 +6,7 @@ const Team = ({ name, founded, ground, crestUrl }) => {
       className="card mx-auto shadow p-3 mb-5 bg-white rounded"
       style={{ width: "20rem", textAlign: "center" }}
     >
-      <img alt="team" src={`${crestUrl}`} class="card-img-top h-100" />
+      <img alt="team" src={`${crestUrl}`} className="card-img-top h-100" />
       <div className="card-body">
         <h3 className="card-title">{name}</h3>
         <p className="card-text">Founded: {founded}</p>

@@ -3,7 +3,7 @@ export const teams = [
     id: 1,
     crestUrl:
       "https://upload.wikimedia.org/wikipedia/en/0/05/Leeds_United_Logo.png",
-    name: "Leeds United",
+    name: "Leeds United F.C",
     founded: "1919",
     ground: "Elland Road"
   },
