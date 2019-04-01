@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import TeamList from "./components/TeamList";
@@ -23,12 +24,14 @@ class App extends Component {
     const { teams } = this.state;
 
     return (
-      <div className="App">
-        <NavBar />
-        <div className="container">
-          <TeamList teams={teams} />
-        </div>
-      </div>
+      <Router>
+        <React.Fragment>
+          <NavBar />
+          <div className="container">
+            <TeamList teams={teams} />
+          </div>
+        </React.Fragment>
+      </Router>
     );
   }
 }

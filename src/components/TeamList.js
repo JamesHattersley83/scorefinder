@@ -9,10 +9,17 @@ const TeamList = ({ teams }) => {
         id={teams[i].id}
         crestUrl={teams[i].crestUrl}
         name={teams[i].name}
+        founded={teams[i].founded}
+        ground={teams[i].venue}
       />
     );
   });
-  return <div className="container d-flex flex-wrap">{teamArray}</div>;
+  return (
+    <React.Fragment>
+      <h2 className="text-center mb-4">Premier League</h2>
+      <div className="container d-flex flex-wrap">{teamArray}</div>
+    </React.Fragment>
+  );
 };
 
 export default TeamList;
