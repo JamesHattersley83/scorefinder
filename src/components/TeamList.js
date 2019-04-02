@@ -1,5 +1,6 @@
 import React from "react";
 import Team from "./Team";
+import logo from "../img/logo.svg";
 
 const TeamList = ({ teams }) => {
   const teamArray = teams.map((team, i) => {
@@ -16,7 +17,7 @@ const TeamList = ({ teams }) => {
   });
   return (
     <React.Fragment>
-      <h2 className="text-center mb-4">Premier League</h2>
+      <img className="mb-5 mx-auto d-block" src={logo} alt="logo" />
       <div className="container d-flex flex-wrap">{teamArray}</div>
     </React.Fragment>
   );

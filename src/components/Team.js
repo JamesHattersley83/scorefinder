@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Team.css";
 
 const Team = ({ name, crestUrl, founded, ground }) => {
   return (
@@ -6,17 +8,21 @@ const Team = ({ name, crestUrl, founded, ground }) => {
       className="card text-center mx-auto shadow p-3 mb-5 rounded"
       style={{ width: "20rem" }}
     >
-      <img alt="team" src={`${crestUrl}`} className="card-img-top h-50" />
+      <img alt="team" src={`${crestUrl}`} className="card-img" />
       <div className="card-body">
         <h3 className="card-title">{name}</h3>
-        <p className="card-text">Founded: {founded}</p>
-        <p className="card-text">Ground: {ground}</p>
-        <a href="#" class="btn btn-primary mr-2">
-          Fixtures
-        </a>
-        <a href="#" class="btn btn-primary">
-          Results
-        </a>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">Founded: {founded}</li>
+          <li className="list-group-item">Ground: {ground}</li>
+        </ul>
+        <div className="card-body">
+          <Link to="/fixtures" class="btn btn-primary mr-2">
+            Fixtures
+          </Link>
+          <a href="#" class="btn btn-primary">
+            Results
+          </a>
+        </div>
       </div>
     </div>
   );
