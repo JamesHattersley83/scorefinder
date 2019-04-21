@@ -1,8 +1,8 @@
 {
-  "homepage": "https://jameshattersley83/github.com/ScoreFinder",
   "name": "scorefinder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jameshattersley83.github.io/ScoreFinder/",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",

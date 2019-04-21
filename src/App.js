@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar";
-import Fixtures from "./components/Fixtures";
 import TeamList from "./components/TeamList";
+import Results from "./components/Results";
+import Fixtures from "./components/Fixtures";
 
 class App extends Component {
   constructor() {
@@ -27,14 +28,14 @@ class App extends Component {
     const { teams } = this.state;
 
     return (
-      <Router>
-        <React.Fragment>
-          <NavBar />
-          <div className="container">
-            <TeamList teams={teams} />
-          </div>
-        </React.Fragment>
-      </Router>
+      <React.Fragment>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" render={() => <TeamList teams={teams} />} />
+          <Route path="/fixtures" component={Fixtures} />
+          <Route path="/results" component={Results} />
+        </Switch>
+      </React.Fragment>
     );
   }
 }

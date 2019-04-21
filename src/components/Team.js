@@ -19,9 +19,9 @@ const Team = ({ name, crestUrl, founded, ground }) => {
           <Link to="/fixtures" class="btn btn-primary mr-2">
             Fixtures
           </Link>
-          <a href="#" class="btn btn-primary">
+          <Link to="/results" class="btn btn-primary">
             Results
-          </a>
+          </Link>
         </div>
       </div>
     </div>
