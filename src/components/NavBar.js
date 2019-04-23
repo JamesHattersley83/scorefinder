@@ -21,10 +21,31 @@ const NavBar = () => {
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul className="navbar-nav align-items-center ml-auto">
-          <li className="nav-item">
-            <Link to="/news" className="nav-link">
-              News
-            </Link>
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Leagues
+            </a>
+            <div className="dropdown-menu">
+              <Link to="/Leagues" className="dropdown-item">
+                Premier League
+              </Link>
+              <Link to="/Leagues" className="dropdown-item">
+                La Liga
+              </Link>
+              <Link to="/Leagues" className="dropdown-item">
+                Seria A
+              </Link>
+              <Link to="/Leagues" className="dropdown-item">
+                Bundesliga
+              </Link>
+            </div>
           </li>
           <li className="nav-item">
             <Link to="/standings" className="nav-link">
