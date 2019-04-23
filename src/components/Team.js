@@ -16,10 +16,10 @@ const Team = ({ name, crestUrl, founded, ground }) => {
           <li className="list-group-item">Ground: {ground}</li>
         </ul>
         <div className="card-body">
-          <Link to="/fixtures" class="btn btn-primary mr-2">
+          <Link to="/fixtures" className="btn btn-primary mr-2">
             Fixtures
           </Link>
-          <Link to="/results" class="btn btn-primary">
+          <Link to="/results" className="btn btn-primary">
             Results
           </Link>
         </div>
