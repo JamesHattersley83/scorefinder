@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/ScoreFinder/static/js/runtime~main.b2dbbf6e.js"
   },
   {
-    "revision": "5da3a69d5c4c0dd22728",
-    "url": "/ScoreFinder/static/js/main.429dd456.chunk.js"
+    "revision": "229a76366157ae6181d9",
+    "url": "/ScoreFinder/static/js/main.1f5466e1.chunk.js"
   },
   {
     "revision": "49fcd336352c7f1f36a6",
     "url": "/ScoreFinder/static/js/2.9d54734e.chunk.js"
   },
   {
-    "revision": "5da3a69d5c4c0dd22728",
+    "revision": "229a76366157ae6181d9",
     "url": "/ScoreFinder/static/css/main.3fdbc363.chunk.css"
   },
   {
-    "revision": "73088e5bf766679cce8812236d997336",
+    "revision": "00ecd4ea7dc57afcab20cd4b80f2ec90",
     "url": "/ScoreFinder/index.html"
   }
 ];
