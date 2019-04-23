@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ScoreFinder/precache-manifest.917a85211bfdb2521c2636310fb34d3e.js"
+  "/ScoreFinder/precache-manifest.5843b0075bc5001cbac27103de0d0692.js"
 );
 
 workbox.clientsClaim();
