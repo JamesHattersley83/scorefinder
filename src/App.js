@@ -11,7 +11,9 @@ class App extends Component {
     super();
     this.state = {
       teams: [],
-      leagueId: ""
+      leagueId: "",
+      fixtures: [],
+      results: []
     };
   }
 
@@ -34,8 +36,8 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route exact path="/" render={() => <TeamList teams={teams} />} />
-            <Route path="/fixtures/team/" component={Fixtures} />
-            <Route path="/results/team/" component={Results} />
+            <Route path="/fixtures" component={Fixtures} />
+            <Route path="/results" component={Results} />
           </Switch>
         </React.Fragment>
       </Router>
