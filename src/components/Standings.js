@@ -11,7 +11,7 @@ class Standings extends Component {
 
   componentDidMount() {
     fetch(
-      'http://api.football-data.org/v2/competitions/PL/standings?standingType=TOTAL',
+      'https://api.football-data.org/v2/competitions/PL/standings?standingType=TOTAL',
       {
         headers: {
           'X-Auth-Token': '491659630092491e821fa9ea920342da'
