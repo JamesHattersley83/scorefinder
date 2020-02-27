@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5269d10b0343e7ae794a",
+    "revision": "9acec972659c1c841fd3",
     "url": "/ScoreFinder/static/css/main.3fdbc363.chunk.css"
   },
   {
-    "revision": "5269d10b0343e7ae794a",
-    "url": "/ScoreFinder/static/js/main.86a11529.chunk.js"
+    "revision": "9acec972659c1c841fd3",
+    "url": "/ScoreFinder/static/js/main.10d381a4.chunk.js"
   },
   {
     "revision": "b2d8068d692286f53947",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/ScoreFinder/static/media/logo.4c59b995.svg"
   },
   {
-    "revision": "89545e04f3adc370876a0215feb350e0",
+    "revision": "36571c8841533955d0408b61f2b15944",
     "url": "/ScoreFinder/index.html"
   }
 ];
