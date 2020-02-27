@@ -1,6 +1,6 @@
-import React from "react";
-import Team from "./Team";
-import logo from "../img/logo.svg";
+import React from 'react';
+import Team from './Team';
+import logo from '../img/logo.svg';
 
 const TeamList = ({ teams }) => {
   const teamArray = teams.map((team, i) => {
